@@ -1,0 +1,40 @@
+	
+
+	/*General styles*/
+	
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	.ovall-layout {
+
+		display: grid;
+		grid-template-columns: minmax(209px, 247px) minmax(510px, auto) minmax(275px, 370px);
+		grid-template-rows: 70px calc(100vh - 140px ) 70px;
+		grid-template-areas: "sidebar feed widgets"
+		 					 "sidebar feed widgets"
+		 					 "sidebar feed widgets";
+	}
+
+	/*Side bar part*/
+	.ovall-layout__sidebar {
+		background-color: #fff;
+		grid-area: sidebar;
+		display: grid;
+	}
+
+
+
+	.ovall-layout__feed {
+		background-color: #797bff;
+		grid-area: feed;
+	}
+
+	.ovall-layout__widgets {
+		background-color: #79ff81;
+		grid-area: widgets;
+	}
+
+
