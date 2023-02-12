@@ -1,4 +1,4 @@
-	
+
 	<!-- Project 1 : Twitter clone -->	
 
 	<!DOCTYPE html>
@@ -10,6 +10,7 @@
 		<meta name="description" content="HTML/CSS Twitter clone project">
 		<meta name="author" content="elayhamrit">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="styles.css">
 
@@ -20,19 +21,76 @@
 
 	</head>
 	
-	<body>
-		
-
-
+	<body>		
 			<div class="layout">
 					
-					<div class="layout__sidebar">Sidebar</div>
-					<div class="layout__main">Content</div>
+					<div class="layout__sidebar">
+						
+						<!-- Brand -->
+						<img id="brand" src="res/twtr-logo.svg">
+
+						<!-- Menu --> 
+						<div class="layout__sidebar--menu">
+							
+							<!-- Menu option -->
+							<div class="layout__sidebar-menu--option active">
+								<svg class="layout__sidebar-menu-option--icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+								</svg>
+								<h2>Home</h2>
+							</div>
+
+							<div class="layout__sidebar-menu--option">
+								<svg class="layout__sidebar-menu-option--icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5" />
+                              </svg>
+								<h2>Explore</h2>
+							</div>
+
+							<div class="layout__sidebar-menu--option">
+								<svg class="layout__sidebar-menu-option--icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                              </svg>
+								<h2>Notification</h2>
+							</div>
+							
+							<div class="layout__sidebar-menu--option">
+								<svg class="layout__sidebar-menu-option--icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                              </svg>
+								<h2>Lists</h2>
+							</div>
+
+							<div class="layout__sidebar-menu--option">
+								<svg class="layout__sidebar-menu-option--icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                               <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                             </svg>
+								<h2>Messages</h2>
+							</div>
+
+							<div class="layout__sidebar-menu--option">
+                                 <svg class="layout__sidebar-menu-option--icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                  		<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                 </svg>
+								<h2>Profile</h2>
+							</div>
+
+							<button class="tweet_button">Tweet</button>
+
+						</div><!-- / layout__sidebar-menu--option -->
+						
+					</div><!-- / layout__sidebar -->
+					
+					<div class="layout__main"></div>
+					
 					<div class="layout__widgets-container">
+						
+						<!-- Fix widgets posistion -->
 						<div class="layout__widgets">Widgets</div>
+					
 					</div>
 
-			</div>
+			</div><!-- /layout -->
 
 
 	</body>
