@@ -18,7 +18,19 @@
 		--light-blue: #81f7fd;
 		--ligh-orange: #fdcd81;
 
-	}	
+	}		
+
+	a {
+		text-decoration: none;
+		color: var(--main-color);
+	}
+
+	input {
+
+		border:none;
+		outline: none;
+
+	}
 
 
 	/* ::: LAYOUT ::: */
@@ -27,7 +39,6 @@
 		display: grid;
 		grid-template-columns: /*sidebar*/ 275px /*content*/ auto /*widgets*/ 350px;
 	}	
-
 	
 	.layout__widgets {
 		position: fixed;
@@ -39,10 +50,8 @@
 
 	/* ::: SIDE_BAR ::: */
 
-	.layout__sidebar {
-
+	.layout__sidebar { 
 		padding: 0 40px 0 30px;
-		margin-top: 20px;
 		height: 100vh;
 		border-right: 1px solid var(--border-color);
 	}
@@ -50,6 +59,7 @@
 	#brand {
 		height: 70px;
 		padding: 20px;
+		margin-top: 20px;
 	}
 
 	.layout__sidebar--menu {
@@ -65,7 +75,6 @@
 		font-size: 19px;
 		margin-right: 30px;
 		font-weight: 700px;
-
 	}
 
 	.layout__sidebar-menu--option:hover {
@@ -96,4 +105,254 @@
 		font-weight: bold;
 		border-radius: 30px;
 	}
+	
 	/* /// SIDE_BAR /// */
+
+
+	/* ::: FEED ::: */
+
+	.layout__feed {
+		border-right: 1px solid var(--border-color);
+		min-width: 350px;
+	}
+
+	.feed__header {
+
+		padding: 15px 20px 15px 20px;
+		border-bottom: 1px solid  var(--border-color);
+
+	}
+
+	.feed__header-title {
+		font-size: 20px;
+	}
+
+
+	.layout__feed--tweet_box {
+		padding: 0px 10px 10px 0px;
+		display: flex;
+		flex-direction: column;
+		border-bottom: 1px solid var(--border-color);
+	}
+
+	.tweet_box--input--container {
+		padding: 20px;
+		display: flex;
+		align-items: center;
+	}
+
+	.tweet_box--input {
+		margin-left: 20px;
+		flex: 1;
+		font-size: 19px;
+	}
+
+	.tweet_box--profile-pic {
+		width: 40px;
+		height: 40px;
+
+	}
+
+	.feed__tweet-footer {
+		display: flex;
+		align-items: center;
+		margin-top: 20px;
+	}
+
+	.feed__tweet-footer--action-item {
+		display: flex;
+		align-items: center;
+		margin-right: 20px;
+	}
+
+	.feed__tweet-footer--action-item-icon {
+		height: 20px;
+		margin-right: 10px;
+
+	}
+
+	.feed__tweet-footer--action-statics {
+		color: #3d3d3d;
+	}	
+
+
+
+	.feed__tweet-footer--action-item > .feed__tweet-footer--action-item-icon.like:hover  {
+		filter: invert(30%) sepia(97%) saturate(7366%) hue-rotate(356deg) brightness(101%) contrast(123%);
+	
+	}
+
+	.liked {
+			fill: red;
+		filter: invert(30%) sepia(97%) saturate(7366%) hue-rotate(356deg) brightness(101%) contrast(123%);
+	}
+
+
+	.tweet_box--button {
+		width: 80px;
+		height: 40px;
+		font-size: 14px;
+		background-color: var(--main-color);
+		border: none;
+		color: #fff;
+		margin-top: 20px;
+		border-radius: 30px ;
+		align-self: end;
+	}
+
+	.upload_items_icon {
+		height: 20px;
+		margin-right: 20px;
+
+	}
+
+	.upload_items_container {
+				justify-self: start;
+				width: fit-content;
+				display: flex;
+				justify-content: space-evenly;
+				margin-left: 30px;
+	}	
+
+	/* /// FEED /// */	
+
+
+	/* ::: Tweet :::*/
+
+	.feed__tweet {
+		padding: 20px;
+		display: flex;
+		align-items: center;
+		border-bottom: 1px solid var(--border-color);
+	}
+
+	.feed__tweet-main {
+		display: flex;
+		flex-direction: column;
+		padding-left: 20px;
+		flex: 1;
+
+	}
+
+	.feed__tweet--userpic {
+		width: 40px;
+		height: 40px;
+		align-self: start;
+	}
+
+	.feed__tweet-header {
+		display: flex;
+		align-items: center;
+
+	}
+
+	.feed__tweet-header--username{
+		margin-left: 5px;
+	}
+
+	.feed__tweet-header--fullname {
+		font-size: 15px;
+	}
+
+	.feed__tweet-header--date {
+	 	margin-left: 5px;
+	 	color: grey;
+	}
+
+	.feed__tweet-content {
+		padding-top: 8px;
+	}
+
+	.feed__tweet-content--image {
+		width: 91%;
+		object-fit: contain;
+		margin-top: 10px;
+		border-radius: 20px;
+	}
+
+	/* /// Tweet /// */
+
+	/* ::: WIDGETS ::: */
+
+
+	.layout__widgets--search-box {
+		background-color: var(--bg-color);
+		padding: 10px;
+		border-radius: 20px;
+		margin-left: 20px;
+		margin-top: 10px;
+
+		display: flex;
+		align-items: center;
+
+
+	}
+
+	.widgets_iput-search-icon {
+		width: 40px;
+		height: 18px;
+	}
+
+	.widgets_iput {
+		margin-right: 57px;
+		background: none;
+
+	}
+
+	.layout__widgets--follow-sugg {
+		padding: 20px;
+		background-color: var(--bg-color);
+		border-radius: 20px;
+		margin-left:20px;
+		margin-top: 20px;
+		width: 100%;
+
+	}
+
+
+	.friend_sugg-dp {
+		width: 40px;
+		height: 40px;
+		margin-right: 10px;
+		
+	}
+
+	.friend_sugg-fullname {
+		font-size: 14px;
+	}
+
+	.friend_sugg a {
+		font-size: 13px;
+	}
+
+	.friend_sugg {
+		display: flex;
+		flex: 1;
+		margin-top: 25px;
+		margin-bottom: 10px;
+	}
+
+	.friend_sugg_infos {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.friend_sugg-followbutt {
+		background: none;
+		border-radius: 20px;
+		border: 1px solid #000;
+		padding: 10px;
+		width: 80px;
+		margin-left: auto;
+}
+
+	.friend_sugg-followbutt:hover {
+	
+	background-color: var(--main-color);
+	color: #fff;
+	border: none;
+
+	}
+
+	/* /// WIDGETS /// */
